@@ -2,32 +2,29 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import {Routes,Route,useLocation} from "react-router-dom"
+import { AnimatePresence } from 'framer-motion'
+import Navbar from './Components/Navbar'
+import WrappedHome from './Components/Home'
+import WrappedAbout from './Components/About'
+import WrappedContact from './Components/Contact'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
+const location = useLocation()
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1 className=''>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <Navbar/>
+    <AnimatePresence mode='wait'>
+
+
+    <Routes location={location} key={location.pathname}>
+      <Route index element={<WrappedHome/>}/>
+      <Route path='/about' element={<WrappedAbout/>}/>
+      <Route path='/contact' element={<WrappedContact/>}/>
+    </Routes>
+    </AnimatePresence>
+       
     </>
   )
 }
