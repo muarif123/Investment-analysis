@@ -1,20 +1,32 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import {Routes,Route,useLocation} from "react-router-dom"
 import { AnimatePresence } from 'framer-motion'
-import Navbar from './Components/Navbar'
-import WrappedHome from './Components/Home'
-import WrappedAbout from './Components/About'
-import WrappedContact from './Components/Contact'
+import Navbar from './Pages/Navbar'
+import WrappedHome from './Pages/Home'
+import WrappedAbout from './Pages/About'
+import WrappedContact from './Pages/Contact'
+import Background from './Components/Background'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 function App() {
   
 const location = useLocation()
+useEffect(() => {
+  AOS.init({
+      duration: 1000, // Animation duration
+      easing: 'ease-in-out', // Easing function
+      once: true, // Whether animation should happen only once - while scrolling down
+  });
+}, []);
   return (
     <>
+    
     <Navbar/>
+    <Background/>
     <AnimatePresence mode='wait'>
 
 
