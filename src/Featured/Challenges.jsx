@@ -11,7 +11,7 @@ const Challenges = () => {
         
     
       
-        <div className='flex flex-wrap justify-between w-[80%] mx-auto border'>
+        <div className='flex flex-wrap justify-between w-[80%] mx-auto'>
 
             <div className='w-[100%] sm:w-[100%] md:w-[100%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%]'>
                

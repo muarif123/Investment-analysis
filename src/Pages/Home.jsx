@@ -41,7 +41,7 @@ const Home = () => {
       <div className='mt-32'>
         <Challenges/>
       </div>
-      <div className='mt-32'>
+      <div className='mt-16'>
         <InvestGrow/>
       </div>
      

@@ -56,7 +56,7 @@ const HoverCards = () => {
                         data-aos="fade-up"
                          // Assign each card to the ref array
                         key={item._id}
-                        className="group mt-10 relative w-[100%] sm:w-[100%] md:w-[48%] lg:w-[23%] xl:w-[23%] 2xl:w-[23%] cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10"
+                        className="group mt-10 relative w-[100%] sm:w-[100%] md:w-[48%] lg:w-[23%] xl:w-[23%] 2xl:w-[23%] h-[250px] cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10"
                         onMouseEnter={() => setHoveredIndex(index)} // Set hover state to the current index
                         onMouseLeave={() => setHoveredIndex(null)} // Reset hover state
                     >
