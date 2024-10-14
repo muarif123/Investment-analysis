@@ -6,6 +6,7 @@ import logo4 from "../../public/logo4.svg"
 import logo5 from "../../public/logo5.svg"
 import Lottie from 'lottie-react';
 import Strategy from "../../public/Strategy.json";
+import Showcase from './Showcase';
 
 
 const CompanyPort = () => {
@@ -46,6 +47,7 @@ const CompanyPort = () => {
         <div className='w-[50%] mx-auto'>
         <Lottie className="" animationData={Strategy} loop />
         </div>
+        
     </div>
   );
 };

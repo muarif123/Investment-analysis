@@ -20,15 +20,15 @@ const Challenges = () => {
 
             </div>
             <div className='w-[100%] sm:w-[100%] md:w-[100%] lg:w-[45%] xl:w-[45%] 2xl:w-[45%] py-14'>
-                <h1 data-aos="fade-up" className='text-gray-500 font-bold text-2xl' style={{ textTransform: "uppercase" }}>We are driven by new challenges.</h1>
-                <p data-aos="fade-up" className='text-md text-gray-500 mt-5'>
+            <h1 data-aos="fade-up" className='text-black font-sans font-bold text-2xl' style={{ textTransform: "uppercase" }}>We are driven by new challenges.</h1>
+                <p data-aos="fade-up" className='text-md text-black mt-5 font-mono'>
                     We are always looking for opportunities to grow and bring new expertise into our firm. We continue to expand across geographies, strategies, and asset classes in pursuit of durable, diversified returns.
                 </p>
                 <div>
 
                 <button
                     type="submit"
-                    class="flex justify-center gap-2 items-center mt-5 shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-emerald-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
+                    class="font-mono flex justify-center gap-2 items-center mt-5 shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-emerald-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group"
                 >
                     Explore
                     <svg

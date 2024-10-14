@@ -30,17 +30,17 @@ const Navbar = () => {
     return (
         <div className='w-[85%] mx-auto flex justify-between py-10'>
             <div className='logo text-white'>
-                <Link className='nav-link' to='/'>Codegrid</Link>
+                <Link className='nav-link font-mono' to='/'>Codegrid</Link>
             </div>
             <div className='hidden md:flex justify-around text-white w-[33%]'>
                 <div className='nav-items'>
-                    <Link className='nav-link hover:text-green-600 transition' to='/'>Home</Link>
+                    <Link className='nav-link hover:text-green-600 transition font-mono' to='/'>Home</Link>
                 </div>
                 <div className='nav-items'>
-                    <Link className='nav-link hover:text-green-600 transition' to='/about'>About</Link>
+                    <Link className='nav-link hover:text-green-600 transition font-mono' to='/about'>About</Link>
                 </div>
                 <div className='nav-items'>
-                    <Link className='nav-link hover:text-green-600 transition' to='/contact'>Contact</Link>
+                    <Link className='nav-link hover:text-green-600 transition font-mono' to='/contact'>Contact</Link>
                 </div>
             </div>
             <div className='flex items-center'>

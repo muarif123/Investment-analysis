@@ -11,6 +11,7 @@ import WrappedContact from './Pages/Contact'
 import Background from './Components/Background'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import Footer from './Components/Footer'
 
 function App() {
   
@@ -36,7 +37,7 @@ useEffect(() => {
       <Route path='/contact' element={<WrappedContact/>}/>
     </Routes>
     </AnimatePresence>
-       
+       <Footer/>
     </>
   )
 }

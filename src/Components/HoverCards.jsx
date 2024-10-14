@@ -66,12 +66,12 @@ const HoverCards = () => {
                                 {item.icon}
                             </span>
                             <div className="pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
-                                <h2 className="font-bold">{item.title}</h2>
+                                <h2 className="font-bold font-mono">{item.title}</h2>
                                 {hoveredIndex===index?(
                                    null 
                                 ):(
 
-                                <p>
+                                <p className='font-sans'>
                                     Lorem ipsum dolor sit, amet consectetur.
                                 </p>
                                 )}

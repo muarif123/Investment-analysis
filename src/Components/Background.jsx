@@ -37,19 +37,19 @@ const Background = () => {
         fill={colors.path1}
         fillOpacity="0.8"
         d="M-100 -100L200 -100L200 30L-100 30Z"
-        style={{ animation: 'path0 3.03s linear infinite alternate' }}
+        style={{ animation: 'path0 2.03s linear infinite alternate' }}
       />
       <path
         fill={colors.path2}
         fillOpacity="0.4"
         d="M-100 -100L200 -100L200 70L-100 70Z"
-        style={{ animation: 'path1 3.76s linear infinite alternate' }}
+        style={{ animation: 'path1 2.76s linear infinite alternate' }}
       />
       <path
         fill={colors.path3}
         fillOpacity="0.4"
         d="M-100 -100L200 -100L200 20L-100 20Z"
-        style={{ animation: 'path2 83.33s linear infinite alternate' }}
+        style={{ animation: 'path2 53.33s linear infinite alternate' }}
       />
     </svg>
   );

@@ -6,6 +6,9 @@ import Downarrow from '../Components/Downarrow.jsx';
 import Challenges from '../Featured/Challenges.jsx';
 import InvestGrow from '../Featured/InvestGrow.jsx';
 import CompanyPort from '../Featured/CompanyPort.jsx';
+import Testimonial from '../Featured/Testimonial.jsx';
+import Showcase from '../Featured/Showcase.jsx';
+import News from '../Featured/News.jsx';
 
 
 
@@ -19,11 +22,11 @@ const Home = () => {
         <div className='text-center w-[100%] sm:w-[100%] md:w-[95%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%]'>
           <AnimatedText duration={0.5}>
 
-        <h1 style={{letterSpacing:"-1.5px"}} className='text-2xl sm:text-4xl md:text-[45px] lg:text-[45px] xl:text-[45px] 2xl:text-[45px] text-center text-white whitespace-nowrap'>WE ARE AN IDEAL BUSINESS</h1>
+        <h1  className='text-2xl sm:text-2xl md:text-[45px] lg:text-[45px] xl:text-[45px] 2xl:text-[45px] text-center text-white'>WE ARE AN IDEAL BUSINESS</h1>
           </AnimatedText>
           <AnimatedText duration={1}>
 
-      <p className='text-lg mt-3 text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis repellat ea, minus sequi deleniti voluptatibus dignissimos! Deleniti perspiciatis officia ullam architecto dignissimos nihil fuga sed expedita exercitationem, eligendi voluptate.</p>
+      <p className='text-md mt-10 font-mono text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis repellat ea, minus sequi deleniti voluptatibus dignissimos! Deleniti perspiciatis</p>
           </AnimatedText>
       
         </div>
@@ -44,6 +47,7 @@ const Home = () => {
       <div className='mt-16'>
         <InvestGrow/>
       </div>
+    
      
 
     
@@ -51,6 +55,10 @@ const Home = () => {
     </div>
      <div className='mt-32'>
      <CompanyPort/>
+     <Showcase/>
+   
+        <News/>
+   
    </div>
     </>
   )
